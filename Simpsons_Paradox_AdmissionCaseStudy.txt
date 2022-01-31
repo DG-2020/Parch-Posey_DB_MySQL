@@ -1,0 +1,49 @@
+
+# What proportion of female students are majoring in Physics? #
+female_physics_rate = admits.query("gender == 'female' & major == 'Physics'").count()/ \
+(admits.query("gender == 'female'").count())
+
+# What proportion of male students are majoring in Physics? #
+male_physics_rate = admits.query("gender == 'male' & major == 'Physics'").count()/ \
+(admits.query("gender == male'").count())
+
+# Admission rate for female Physics majors? #
+len(admits[(admits["gender"] == 'female') & (admits["major"] == 'Physics') & admits["admitted"]]) / len(admits[(admits["gender"] == 'female') & (admits["major"] == 'Physics')])
+
+# Admission rate for male Physics majors #
+len(admits[(admits["gender"] == 'male') & (admits["major"] == 'Physics') & admits["admitted"]]) / len(admits[(admits["gender"] == 'male') & (admits["major"] == 'Physics')])
+
+# What proportion of female students are majoring in Chemistry? #
+len(admits[(admits['gender'] == 'female') & (admits['major'] == 'Chemistry')]) / len(admits[admits['gender'] == 'female'])
+
+# What proportion of male students are majoring in Chemistry? #
+len(admits[(admits['gender'] == 'male') & (admits['major'] == 'Chemistry')]) / len(admits[admits['gender'] == 'male'])
+
+# Admission rate for female Chemistry majors #
+len(admits[(admits["gender"] == 'female') & (admits["major"] == 'Chemistry') & admits["admitted"]]) / len(admits[(admits["gender"] == 'female') & (admits["major"] == 'Chemistry')])
+
+# Admission rate for male Chemistry majors #
+len(admits[(admits["gender"] == 'male') & (admits["major"] == 'Chemistry') & admits["admitted"]]) / len(admits[(admits["gender"] == 'male') & (admits["major"] == 'Chemistry')])
+
+# Admission rate for Physics majors #
+len(admits[(admits["major"] == 'Physics') & admits["admitted"]]) / len(admits[(admits["major"] == 'Physics')])
+
+# Admission rate for Chemistry majors #
+len(admits[(admits["major"] == 'Chemistry') & admits["admitted"]]) / len(admits[(admits["major"] == 'Chemistry')])
+
+## Final Synopsis ##
+	The overall proportion of males and females (applying for physics or chemistry) are 48.6% and 51.4% respectively, 
+which shows the proportion of females applying were marginally higher as compared to males. When we look at the 
+conversion rate (admission rate as compared to proportion rate), it's evident that for Physics major only 51.6% males
+(as compared to proportion rate of 92.6% males) admitted in the course. 
+
+	On the other hand, a very high 74.25% females (as compared to proportion rate of 12.1% females) got admission 
+in the course which tells us that Females have a very high conversion rate as compared to Males for Physics major. 
+Similarly, when we look at the conversion rate (admission rate as compared to proportion rate), it's evident that for 
+Chemistry major a marginally high 11.1% males (as compared to proportion rate of 7.4% males) admitted in the course. 
+On the other hand, only 22.6% females (as compared to proportion rate of 87.9% females) got admission in the course 
+which tells us that here Males have a very high conversion rate as compared to Females for Chemistry major.
+
+	Finally, if we analyse the major- wise admission rate for Physics major it's 54.29% and Chemistry major it's 
+21.72% for both genders. But basis of above-mentioned gender-wise and major-wise details, we can say that Females have 
+a superior conversion rate (admission rate as compared to proportion rate) when comapred with Males.
