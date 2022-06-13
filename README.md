@@ -1,4 +1,5 @@
-# Parch-Posey_DB_MySQL
+**Parch-Posey_DB_MySQL**
+
 Parch and Posey database was used to explore different functional aspects of SQL from basic to advanced. This short project is to help anyone to set up their own local environment and practice querying.
 
 _**Entity Relationship Diagram (ERD)**_
