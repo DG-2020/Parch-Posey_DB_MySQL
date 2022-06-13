@@ -15,7 +15,7 @@ _**Parch & Posey database there are five tables (essentially 5 spreadsheets):**_
 
 ![image](https://user-images.githubusercontent.com/60899591/173293307-574dbc48-6257-46bc-ba75-b21b00bfca0f.png)
 
-_**This project is aming for the following components of the MySQL:**_
+_**This project is aming for the following components of MySQL:**_
 
 **- SQL Basics**
 **- SQL Joins**
