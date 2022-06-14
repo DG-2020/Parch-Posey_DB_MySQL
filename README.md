@@ -4,7 +4,7 @@ Parch and Posey database was used to explore different functional aspects of SQL
 
 The _**Entity Relationship Diagram (ERD)**_ helps us visualize the data we are analyzing including:
 - The names of the tables.
-= The columns in each table.
+- The columns in each table.
 - The way the tables work together.
 
 _**Parch & Posey database there are five tables (essentially 5 spreadsheets):**_
